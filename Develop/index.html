@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- TODO: add head content below -->
+  <title>Josh Kramer's Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <!-- TODO: add body content below -->
+  <header>
+    <!-- I like the look of having the picture and name together, threw em in a div -->
+    <div class="name-and-pic">
+    <h1>
+      Josh Kramer
+    </h1>
+    <img id="pfp" src="./assets/images/pfp.png" alt="Picture of Josh" />
+    </div>
+    <nav>
+      <ul>
+        <!-- add links to relevant sections below -->
+        <li id="nav-about"><a href="#sect-about"> About Me </a></li>
+        <li id="nav-projects"><a href="#sect-projects"> Projects </a></li>
+        <li id="nav-contact"> <a href="#sect-contact"> Contact </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero-banner"></div>
+
+  <main>
+  <div class="page-wrapper">
+
+    <!-- About me Section -->
+  <section class="page-section" id="sect-about">
+    <h2>About Me</h2>
+      <div id="bio">
+        <p>Thank you for taking a look at my portfolio. <br>
+          I'm a Brooklyn based sound engineer and web developer.<br>
+          After graduating with my BA in Linguistics, I moved back to
+          New York to complete my Masters in Music Technology. <br>
+          My career path has led me from working in nightclubs and event spaces to corporate AV in banks and lawfirms.
+          <br>
+          In October of 2024 I started a Web Dev bootcamp and at the same time transitioned to the Web Edit department
+          at my firm. <br>
+          I'm excited to develop my skills as a Web Dev, and to create some unique Multimedia Experiences. <br>
+          For now, please click on the "Run Buddy" project below, which will link out to a holding page hosted on my github. 
+        </p>
+      </div>
+  </section>
+
+  <!-- Project Section -->
+  <section class="page-section" id="sect-projects">
+    <h2>Projects</h2>
+    <!-- container for all of the project cards - sets up flex-box -->
+    <div class="flex-container">
+      <!-- makes this div into a link, clicking will open a new page to homework1.  VSCode shows an error... but it works! -->
+      <div class="flex-item run-buddy" id="project-card-1" style="cursor: pointer;" onclick=window.open('https://kramerjosh.github.io/Homework1/')> 
+        <h3>Run Buddy</h3>
+      </div>
+      <div class="flex-item led-wall" id="project-card-2">
+        <h3>LED Wall</h3>
+      </div>
+      <div class="flex-item react-calc" id="project-card-3">
+        <h3>Calculator</h3>
+      </div>
+      <div class="flex-item pastel-puzzles" id="project-card-4">
+        <h3>Pastel Puzzels</h3>
+      </div>
+      <div class="flex-item surf-report" id="project-card-5">
+        <h3>Surf Report</h3>
+      </div>
+  </section>
+</main>
+
+  <section class="page-section" id="sect-contact">
+    <h2>Contact</h2>
+    <div class="Contact">
+      <address>
+        Josh Kramer <br>
+        <a href="mailto:kramer@nyu.edu">kramer@nyu.edu</a><br>
+        914-263-0071<br>
+        <a href="github.com/KramerJosh">github</a><br>
+        Brooklyn, NY<br>
+      </address>
+    </div>
+  </section>
+  </div>
+
+</body>
+
+</html>
